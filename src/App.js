@@ -21,24 +21,22 @@ function App() {
     <div className="App">
       <UserContext.Provider value={val}>
         {/* {flag === 0 || flag === 1 ? (
-          <Login />
-        ) : ( */} {(  
+           <Login /> 
+         ) 
+        : (  */}
           <AppContextProvider>
             <Router>
               <Navbar />
               <hr></hr>
               <Routes>
-
-                <Route path={`${PATH}/cart`}  element={<Cart />} />
-                <Route path={`${PATH}/`} index element={<Products />} />
+                <Route path={`${PATH}/`}  element={<Products />} />
                 <Route path={`${PATH}/order`} element={<Orders />} />
-              
-               
+                <Route path={`${PATH}/cart`} index  element={<Cart />} />
               </Routes>
               <Footer />
             </Router>
           </AppContextProvider>
-        )}
+        {/* )} */}
       </UserContext.Provider>
     </div>
   );

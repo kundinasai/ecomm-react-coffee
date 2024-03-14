@@ -2,7 +2,6 @@ import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../../App";
 import Register from "./Register";
-import Cart from "../cart/Cart";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./Login.css";
 import { useState } from "react";
